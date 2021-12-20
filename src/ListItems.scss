@@ -1,0 +1,34 @@
+.list-items--container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-items--header {
+  color: var(--text01);
+  flex: 0 0 auto;
+}
+
+.list-items--table-container {
+  flex: 1 1 0;
+  color: var(--text02);
+}
+
+.list-items--empty-table {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+$background-color: var(--ui-background);
+$border: 1px solid var(--ui01);
+$header-background-color: var(--ui03);
+$row-hovered-background-color: var(--hover-ui);
+$header-cell-hovered-background-color: var(--hover-selected-ui);
+$sort-indicator-hovered-color: var(--icon01);
+
+@import "~react-base-table/es/_BaseTable.scss";

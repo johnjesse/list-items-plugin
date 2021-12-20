@@ -1,0 +1,6 @@
+.icon-container {
+  width: 24px;
+  height: 24px;
+  padding-right: 8px;
+  fill: var(--icon01);
+}

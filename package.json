@@ -2,22 +2,35 @@
   "name": "list-items",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
+    "@carbon/icons-react": "^10.44.0",
+    "@carbon/themes": "^10.47.0",
+    "@i2analyze/notebook-sdk": "^1.0.1",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "@types/carbon-components": "^10.27.1",
+    "@types/carbon-components-react": "^7.46.1",
     "@types/jest": "^26.0.24",
     "@types/node": "^12.20.37",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "@types/react-window": "^1.8.5",
+    "carbon-components": "^10.49.0",
+    "carbon-components-react": "^7.49.1",
+    "carbon-icons": "^7.0.7",
+    "node-sass": "^6.0.0",
     "react": "^17.0.2",
+    "react-base-table": "^1.13.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-window": "^1.8.6",
     "typescript": "^4.5.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env PUBLIC_URL=/opal/plugins/listitems react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/carbon__icons-react": "^10.31.2",
+    "cross-env": "^7.0.3"
   }
 }

@@ -1,0 +1,19 @@
+.row-image {
+  width: 24px;
+  height: 24px;
+  padding-right: 8px;
+  flex: 0 0 auto;
+}
+
+.label-cell {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.row-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1 1 0;
+}

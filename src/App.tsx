@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { getToolViewApi, toolview } from "@i2analyze/notebook-sdk";
+import { useEffect, useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ToolView from "./ToolView";
+import { ToolViewApiContext } from "./useToolViewApi";
+
+export default function App() {
+  const [toolViewApi, setToolViewApi] = useState<
+    toolview.IToolViewApi | undefined
+  >();
+
+  useEffect(() => {
+    getToolViewApi().then((api) => {
+      setToolViewApi(api);
+    });
+  }, []);
+
+  if (toolViewApi) {
+    return (
+      <ToolViewApiContext.Provider value={toolViewApi}>
+        <ToolView />
+      </ToolViewApiContext.Provider>
+    );
+  } else {
+    return null;
+  }
 }
-
-export default App;

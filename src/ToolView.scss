@@ -1,0 +1,61 @@
+.carbonwhite {
+  --text01: #161616;
+  --text02: #525252;
+
+  --ui-background: #ffffff;
+  --ui01: #f4f4f4;
+  --ui03: #e0e0e0;
+  --ui04: #8d8d8d;
+
+  --hover-ui: #e5e5e5;
+  --hover-selected-ui: #cacaca;
+  --icon01: #161616;
+}
+
+.carbongray10 {
+  --text01: #161616;
+  --text02: #525252;
+
+  --ui-background: #f4f4f4;
+  --ui01: #ffffff;
+  --ui03: #e0e0e0;
+  --ui04: #8d8d8d;
+
+  --hover-ui: #e5e5e5;
+  --hover-selected-ui: #cacaca;
+  --icon01: #161616;
+}
+
+.carbongray90 {
+  --text01: #f4f4f4;
+  --text02: #c6c6c6;
+
+  --ui-background: #262626;
+  --ui01: #393939;
+  --ui03: #525252;
+  --ui04: #f4f4f4;
+
+  --hover-ui: #4c4c4c;
+  --hover-selected-ui: #656565;
+  --icon01: #f4f4f4;
+}
+
+.carbongray100 {
+  --text01: #f4f4f4;
+  --text02: #c6c6c6;
+
+  --ui-background: #161616;
+  --ui01: #262626;
+  --ui03: #393939;
+  --ui04: #6f6f6f;
+
+  --hover-ui: #353535;
+  --hover-selected-ui: #4c4c4c;
+  --icon01: #f4f4f4;
+}
+
+.base-theme {
+  height: 100vh;
+  width: 100%;
+  color: var(--text01);
+}

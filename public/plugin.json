@@ -1,0 +1,11 @@
+{
+  "$schema": "https://ibm-i2.github.io/notebook-sdk/schemas/plugin-manifest.json",
+  "name": "List items",
+  "pluginId": "c9bac538-6595-4833-b86a-41dc28a8c07e",
+  "pluginVersion": "1.0.0",
+  "entryPointUrl": "./entrypoint.js",
+  "toolViewCsp": {
+    "style-src": "'unsafe-inline'",
+    "script-src": "'unsafe-inline'"
+  }
+}
